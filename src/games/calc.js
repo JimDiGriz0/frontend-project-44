@@ -1,15 +1,15 @@
-import { isAnswerCorrect, getRandomNumber } from "../index.js";
-import { getUserName } from "../cli.js";
+import { isAnswerCorrect, getRandomNumber } from '../index.js';
+import { getUserName } from '../cli.js';
 
 const getRandomOperator = () => {
-  const operators = ["+", "-", "*"];
+  const operators = ['+', '-', '*'];
   return operators[Math.floor(Math.random() * operators.length)];
 };
 
 const userName = getUserName();
 
 const brainCalc = () => {
-  console.log("What is the result of the expression?");
+  console.log('What is the result of the expression?');
   let correctAnswersCount = 0;
   let currentExpression;
 
@@ -18,20 +18,20 @@ const brainCalc = () => {
     const b = getRandomNumber();
     let correctAnswer;
     switch (getRandomOperator()) {
-      case "+":
+      case '+':
         currentExpression = `${a} + ${b}`;
         correctAnswer = a + b;
         break;
-      case "-":
+      case '-':
         currentExpression = `${a} - ${b}`;
         correctAnswer = a - b;
         break;
-      case "*":
+      case '*':
         currentExpression = `${a} * ${b}`;
         correctAnswer = a * b;
         break;
       default:
-        console.log("THIS IS IMPOSSIBLE! HOW DO YOU DID IT?");
+        console.log('THIS IS IMPOSSIBLE! HOW DO YOU DID IT?');
         return;
     }
     const userAnswer = isAnswerCorrect(

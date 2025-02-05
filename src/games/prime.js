@@ -1,5 +1,5 @@
-import { isAnswerCorrect, getRandomNumber } from "../index.js";
-import { getUserName } from "../cli.js";
+import { isAnswerCorrect, getRandomNumber } from '../index.js';
+import { getUserName } from '../cli.js';
 
 const primeNumberCheck = (num) => {
   if (num <= 1) return false;
@@ -21,7 +21,7 @@ const isPrimeNumber = () => {
 
   while (correctAnswersCount < 3) {
     const currentNumber = getRandomNumber();
-    const correctAnswer = primeNumberCheck(currentNumber) ? "yes" : "no";
+    const correctAnswer = primeNumberCheck(currentNumber) ? 'yes' : 'no';
     let answer = isAnswerCorrect(currentNumber, correctAnswer);
     if (answer[0]) {
       correctAnswersCount += 1;

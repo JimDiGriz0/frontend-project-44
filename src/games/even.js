@@ -1,5 +1,5 @@
-import { isAnswerCorrect, getRandomNumber } from "../index.js";
-import { getUserName } from "../cli.js";
+import { isAnswerCorrect, getRandomNumber } from '../index.js';
+import { getUserName } from '../cli.js';
 
 const isEven = (num) => num % 2 === 0;
 
@@ -11,7 +11,7 @@ const isItEvenNumGame = () => {
 
   while (correctAnswersCount < 3) {
     const currentCheckNum = getRandomNumber();
-    const correctAnswer = isEven(currentCheckNum) ? "yes" : "no";
+    const correctAnswer = isEven(currentCheckNum) ? 'yes' : 'no';
     let answer = isAnswerCorrect(currentCheckNum, correctAnswer);
     if (answer[0]) {
       correctAnswersCount += 1;

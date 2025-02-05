@@ -1,5 +1,5 @@
-import { isAnswerCorrect, getRandomNumber } from "../index.js";
-import { getUserName } from "../cli.js";
+import { isAnswerCorrect, getRandomNumber } from '../index.js';
+import { getUserName } from '../cli.js';
 
 const userName = getUserName();
 

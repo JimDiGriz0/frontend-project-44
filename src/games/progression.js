@@ -25,7 +25,7 @@ const progressionGame = () => {
       progressionArr.push(progressionArr[i - 1] + currentDiff);
     }
     for (let z = 0; z < 10; z += 1) {
-      question = `${question} ${progressionArr[z]}`;
+      question += (z === 0 ? "" : " ") + progressionArr[z];
       if (z === hideNum) {
         correctAnswer += progressionArr[hideNum];
         question = question.slice(0, question.lastIndexOf(" ")) + " ..";

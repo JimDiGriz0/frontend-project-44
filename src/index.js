@@ -9,6 +9,4 @@ const isAnswerCorrect = (question, correctAnswer) => {
   return [false, answer];
 };
 
-const getRandomNumber = (max = 100) => Math.floor(Math.random() * (max + 1));
-
-export { isAnswerCorrect, getRandomNumber };
+export default isAnswerCorrect;

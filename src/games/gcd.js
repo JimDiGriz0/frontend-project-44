@@ -16,7 +16,7 @@ const gcd = (firstNum, secondNum) => {
 };
 
 const gcdGame = () => {
-  console.log(`Find the greatest common divisor of given numbers.`);
+  console.log('Find the greatest common divisor of given numbers.');
   let correctAnswersCount = 0;
   while (correctAnswersCount < 3) {
     const firstNum = getRandomNumber() + 1;
@@ -31,7 +31,6 @@ const gcdGame = () => {
     }
   }
   console.log(`Congratulations, ${userName}!`);
-  return;
 };
 
 export default gcdGame;

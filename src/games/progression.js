@@ -6,7 +6,7 @@ const userName = getUserName();
 
 const progressionGame = () => {
   let correctAnswersCount = 0;
-  console.log(`What number is missing in the progression?`);
+  console.log('What number is missing in the progression?');
   while (correctAnswersCount < 3) {
     const progressionArr = [];
     const currentDiff = getRandomNumber(20);

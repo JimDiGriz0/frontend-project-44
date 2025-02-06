@@ -7,7 +7,7 @@ const isEven = (num) => num % 2 === 0;
 const userName = getUserName();
 
 const isItEvenNumGame = () => {
-  console.log(`Answer "yes" if the number is even, otherwise answer "no".`);
+  console.log('Answer "yes" if the number is even, otherwise answer "no".');
   let correctAnswersCount = 0;
 
   while (correctAnswersCount < 3) {

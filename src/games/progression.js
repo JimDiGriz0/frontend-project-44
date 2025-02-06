@@ -1,10 +1,12 @@
 import { isAnswerCorrect, getRandomNumber } from '../index.js';
 import { getUserName } from '../cli.js';
-
 const userName = getUserName();
 
 const getProgressionDiff = () => {
   let diff = getRandomNumber(20);
+  if (diff === 0) {
+    diff += getRandomNumber(9);
+  }
   return diff;
 };
 
@@ -12,11 +14,11 @@ const progressionGame = () => {
   let correctAnswersCount = 0;
   console.log(`What number is missing in the progression?`);
   while (correctAnswersCount < 3) {
-    let question = '';
     const progressionArr = [];
-    const currentDiff = getProgressionDiff();
+    const currentDiff = getProgressionDiff(20);
     const startNum = getRandomNumber(40);
     const hideNum = getRandomNumber(9);
+    let question = '';
     let correctAnswer = '';
 
     progressionArr.push(startNum);
@@ -25,12 +27,14 @@ const progressionGame = () => {
       progressionArr.push(progressionArr[i - 1] + currentDiff);
     }
     for (let z = 0; z < 10; z += 1) {
-      question += (z === 0 ? '' : ' ') + progressionArr[z];
       if (z === hideNum) {
-        correctAnswer += progressionArr[hideNum];
-        question = question.slice(0, question.lastIndexOf(' ')) + ' ..';
+        question = `${question} ..`;
+        correctAnswer = String(progressionArr[z]);
+      } else {
+        question = `${question} ${progressionArr[z]}`;
       }
     }
+    question = question.slice(1);
     const answer = isAnswerCorrect(question, correctAnswer);
     if (answer[0]) {
       correctAnswersCount += 1;
@@ -44,5 +48,4 @@ const progressionGame = () => {
   console.log(`Congratulations, ${userName}!`);
   return;
 };
-
 export { progressionGame };

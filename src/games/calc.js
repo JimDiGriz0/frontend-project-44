@@ -1,15 +1,15 @@
+import greetings from '../cli.js';
 import isAnswerCorrect from '../index.js';
-import getUserName from '../cli.js';
-import getRandomNumber from '../randomNumber.js';
+import getRandomNumber from '../utils.js';
 
 const getRandomOperator = () => {
   const operators = ['+', '-', '*'];
   return operators[Math.floor(Math.random() * operators.length)];
 };
 
-const userName = getUserName();
+const userName = greetings();
 
-const brainCalc = () => {
+const runCalc = () => {
   console.log('What is the result of the expression?');
   let correctAnswersCount = 0;
   let currentExpression;
@@ -46,4 +46,4 @@ const brainCalc = () => {
   console.log(`Congratulations, ${userName}!`);
 };
 
-export default brainCalc;
+export default runCalc;

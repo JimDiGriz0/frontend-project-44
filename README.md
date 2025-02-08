@@ -6,8 +6,7 @@
 
 ## App description:
 
-This small application was created by me as part of my studies on the Hexlet educational platform.
-A set of simple math games for the CLI. It helps quickly test your math skills or just pass a minute or two.
+This small application was created by me as part of my studies on the Hexlet educational platform. The brain-games application is a set of five math games for the command line interface (CLI). It helps quickly test your math skills or just pass a minute or two.
 
 ### Minimum system requirements:
 
@@ -26,6 +25,8 @@ make install
 ```
 npm link
 ```
+
+[![asciicast](https://asciinema.org/a/701492.svg)](brain-games install)
 
 ## Includes the following games:
 
@@ -53,6 +54,8 @@ to start type:
 brain-calc
 ```
 
+[![asciicast](https://asciinema.org/a/701632.svg)](brain-gcd)
+
 #### Greatest common divisor
 
 to start type:
@@ -60,6 +63,8 @@ to start type:
 ```
 brain-gcd
 ```
+
+[![asciicast](https://asciinema.org/a/701647.svg)](brain-progression)
 
 #### Is the number prime?
 
@@ -69,6 +74,8 @@ to start type:
 brain-prime
 ```
 
+[![asciicast](https://asciinema.org/a/701663.svg)](brain-prime)
+
 #### Arithmetic progression sequence
 
 to start type:
@@ -76,13 +83,3 @@ to start type:
 ```
 brain-progression
 ```
-
-[![asciicast](https://asciinema.org/a/701492.svg)](https://asciinema.org/a/701492)
-
-[![asciicast](https://asciinema.org/a/701548.svg)](https://asciinema.org/a/701548)
-
-[![asciicast](https://asciinema.org/a/701632.svg)](https://asciinema.org/a/701632)
-
-[![asciicast](https://asciinema.org/a/701647.svg)](https://asciinema.org/a/701647)
-
-[![asciicast](https://asciinema.org/a/701663.svg)](https://asciinema.org/a/701663)

@@ -1,10 +1,10 @@
-import getUserName from '../cli.js';
-import getRandomNumber from '../randomNumber.js';
+import greetings from '../cli.js';
 import isAnswerCorrect from '../index.js';
+import getRandomNumber from '../utils.js';
 
-const userName = getUserName();
+const userName = greetings();
 
-const progressionGame = () => {
+const runProgression = () => {
   let correctAnswersCount = 0;
   console.log('What number is missing in the progression?');
   while (correctAnswersCount < 3) {
@@ -39,4 +39,4 @@ const progressionGame = () => {
   }
   console.log(`Congratulations, ${userName}!`);
 };
-export default progressionGame;
+export default runProgression;

@@ -1,8 +1,8 @@
+import greetings from '../cli.js';
 import isAnswerCorrect from '../index.js';
-import getRandomNumber from '../randomNumber.js';
-import getUserName from '../cli.js';
+import getRandomNumber from '../utils.js';
 
-const primeNumberCheck = (num) => {
+const isPrime = (num) => {
   if (num <= 1) return false;
   if (num === 2) return true;
   if (num % 2 === 0) return false;
@@ -14,15 +14,15 @@ const primeNumberCheck = (num) => {
   return true;
 };
 
-const userName = getUserName();
+const userName = greetings();
 
-const isPrimeNumber = () => {
+const runPrime = () => {
   console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
   let correctAnswersCount = 0;
 
   while (correctAnswersCount < 3) {
-    const currentNumber = getRandomNumber();
-    const correctAnswer = primeNumberCheck(currentNumber) ? 'yes' : 'no';
+    const currentNumber = getRandomNumber(2);
+    const correctAnswer = isPrime(currentNumber) ? 'yes' : 'no';
     const answer = isAnswerCorrect(currentNumber, correctAnswer);
     if (answer[0]) {
       correctAnswersCount += 1;
@@ -34,4 +34,4 @@ const isPrimeNumber = () => {
   console.log(`Congratulations, ${userName}!`);
 };
 
-export default isPrimeNumber;
+export default runPrime;

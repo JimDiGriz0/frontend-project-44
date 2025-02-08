@@ -1,12 +1,12 @@
+import greetings from '../cli.js';
 import isAnswerCorrect from '../index.js';
-import getRandomNumber from '../randomNumber.js';
-import getUserName from '../cli.js';
+import getRandomNumber from '../utils.js';
 
 const isEven = (num) => num % 2 === 0;
 
-const userName = getUserName();
+const userName = greetings();
 
-const isItEvenNumGame = () => {
+const runEven = () => {
   console.log('Answer "yes" if the number is even, otherwise answer "no".');
   let correctAnswersCount = 0;
 
@@ -24,4 +24,4 @@ const isItEvenNumGame = () => {
   console.log(`Congratulations, ${userName}!`);
 };
 
-export default isItEvenNumGame;
+export default runEven;

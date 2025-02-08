@@ -1,6 +1,6 @@
 import readlineSync from 'readline-sync';
 
-const isAnswerCorrect = (question, correctAnswer) => {
+const getUserAnswer = (question, correctAnswer) => {
   const answer = readlineSync.question(`Question: ${question} \nYour answer: `);
   if (correctAnswer === answer) {
     console.log('Correct!');
@@ -9,4 +9,4 @@ const isAnswerCorrect = (question, correctAnswer) => {
   return [false, answer];
 };
 
-export default isAnswerCorrect;
+export default getUserAnswer;

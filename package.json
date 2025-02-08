@@ -2,7 +2,7 @@
   "name": "@hexlet/code",
   "type": "module",
   "version": "1.0.0",
-  "description": "[![Actions Status](https://github.com/JimDiGriz0/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/JimDiGriz0/frontend-project-44/actions)",
+  "description": "A set of simple math games for the CLI",
   "main": "index.js",
   "bin": {
     "brain-games": "bin/brain-games.js",
@@ -22,7 +22,10 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.19.0",
-    "eslint": "^9.19.0",
+    "eslint": "^8.57.1",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-fp": "^2.3.0",
+    "eslint-plugin-import": "^2.31.0",
     "globals": "^15.14.0"
   }
 }

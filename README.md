@@ -16,7 +16,7 @@ Node.js >= v13.2.0
 ### Install:
 
 ```
-git@github.com:JimDiGriz0/frontend-project-44.git
+git clone git@github.com:JimDiGriz0/frontend-project-44.git
 ```
 
 ```
@@ -31,11 +31,15 @@ npm link
 
 - Greetings!
 
+to start type:
+
 ```
 brain-games
 ```
 
 - Checking if a number is even
+
+to start type:
 
 ```
 brain-even
@@ -43,11 +47,15 @@ brain-even
 
 - Calculating the result of an expression
 
+to start type:
+
 ```
 brain-calc
 ```
 
 - Greatest common divisor
+
+to start type:
 
 ```
 brain-gcd
@@ -55,11 +63,15 @@ brain-gcd
 
 - Is the number prime?
 
+to start type:
+
 ```
 brain-prime
 ```
 
 - Arithmetic progression sequence
+
+to start type:
 
 ```
 brain-progression

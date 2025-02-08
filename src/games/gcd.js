@@ -1,10 +1,6 @@
-import greetings from '../cli.js';
-import isAnswerCorrect from '../index.js';
-import getRandomNumber from '../utils.js';
+import { getRandomNumber, getUserAnswer } from '../utils.js';
 
-const userName = greetings();
-
-const gcd = (firstNum, secondNum) => {
+const getGcd = (firstNum, secondNum) => {
   let a = firstNum;
   let b = secondNum;
   while (b !== 0) {
@@ -16,21 +12,15 @@ const gcd = (firstNum, secondNum) => {
 };
 
 const runGcd = () => {
+  const firstNum = getRandomNumber(1, 100);
+  const secondNum = getRandomNumber(1, 100);
+
+  const gcd = getGcd(firstNum, secondNum);
+  const question = `${firstNum} ${secondNum}`;
+  const answer = getUserAnswer(question, String(gcd));
+
   console.log('Find the greatest common divisor of given numbers.');
-  let correctAnswersCount = 0;
-  while (correctAnswersCount < 3) {
-    const firstNum = getRandomNumber(1);
-    const secondNum = getRandomNumber(1);
-    const divider = gcd(firstNum, secondNum);
-    const answer = isAnswerCorrect(`${firstNum} ${secondNum}`, String(divider));
-    if (answer[0]) {
-      correctAnswersCount += 1;
-    } else {
-      console.log(`'${answer[1]}' is wrong answer ;(. Correct answer was '${divider}'.\nLet's try again, ${userName}!`);
-      return;
-    }
-  }
-  console.log(`Congratulations, ${userName}!`);
+  return answer;
 };
 
 export default runGcd;

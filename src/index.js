@@ -1,12 +1,20 @@
-import readlineSync from 'readline-sync';
+import greetings from './cli.js';
 
-const getUserAnswer = (question, correctAnswer) => {
-  const answer = readlineSync.question(`Question: ${question} \nYour answer: `);
-  if (correctAnswer === answer) {
-    console.log('Correct!');
-    return [true, answer];
+const runGame = (game) => {
+  const userName = greetings();
+  let winsCount = 0;
+  while (winsCount < 3) {
+    const isCorrect = game();
+
+    if (isCorrect[0] === true) {
+      winsCount += 1;
+    } else {
+      console.log(`'${isCorrect[2]}' is wrong answer ;(. Correct answer was '${isCorrect[1]}'.`);
+      console.log(`Let's try again, ${userName}!`);
+      return;
+    }
   }
-  return [false, answer];
+  console.log(`Congratulations, ${userName}`);
 };
 
-export default getUserAnswer;
+export default runGame;

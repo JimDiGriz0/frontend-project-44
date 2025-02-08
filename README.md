@@ -31,7 +31,7 @@ npm link
 
 - Greetings!
 
-to start type:
+**to start type:**
 
 ```
 brain-games
@@ -39,7 +39,7 @@ brain-games
 
 - Checking if a number is even
 
-to start type:
+**to start type:**
 
 ```
 brain-even
@@ -47,7 +47,7 @@ brain-even
 
 - Calculating the result of an expression
 
-to start type:
+**to start type:**
 
 ```
 brain-calc
@@ -55,7 +55,7 @@ brain-calc
 
 - Greatest common divisor
 
-to start type:
+**to start type:**
 
 ```
 brain-gcd
@@ -63,7 +63,7 @@ brain-gcd
 
 - Is the number prime?
 
-to start type:
+**to start type:**
 
 ```
 brain-prime
@@ -71,7 +71,7 @@ brain-prime
 
 - Arithmetic progression sequence
 
-to start type:
+**to start type:**
 
 ```
 brain-progression

@@ -4,10 +4,12 @@ const getRandomNumber = (min = 0, max = 100) => Math.floor(Math.random() * (max 
 
 const getUserAnswer = (question, correctAnswer) => {
   const userAnswer = readlineSync.question(`Question: ${question} \nYour answer: `);
+
   if (correctAnswer === userAnswer) {
     console.log('Correct!');
     return [true, correctAnswer, userAnswer];
   }
+
   return [false, correctAnswer, userAnswer];
 };
 

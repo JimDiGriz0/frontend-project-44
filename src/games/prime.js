@@ -15,7 +15,9 @@ const isPrime = (num) => {
 const runPrime = () => {
   const currentNumber = getRandomNumber();
   const correctAnswer = isPrime(currentNumber) ? 'yes' : 'no';
+
   console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
+
   const answer = getUserAnswer(String(currentNumber), correctAnswer);
   return answer;
 };

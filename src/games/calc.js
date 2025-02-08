@@ -23,7 +23,9 @@ const runCalc = () => {
       console.log('THIS IS IMPOSSIBLE! HOW DO YOU DID IT?');
       break;
   }
+
   console.log('What is the result of the expression?');
+
   const answer = getUserAnswer(currentExpression, String(correctAnswer));
   return answer;
 };

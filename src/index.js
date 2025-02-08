@@ -3,6 +3,7 @@ import greetings from './cli.js';
 const runGame = (game) => {
   const userName = greetings();
   let winsCount = 0;
+
   while (winsCount < 3) {
     const isCorrect = game();
 
@@ -14,6 +15,7 @@ const runGame = (game) => {
       return;
     }
   }
+
   console.log(`Congratulations, ${userName}!`);
 };
 

@@ -6,7 +6,7 @@ const runProgression = () => {
   const startNum = getRandomNumber(1, 10);
   const hideNum = getRandomNumber(0, 9);
   let question = '';
-  let correctAnswer = '';
+  let correctAnswer;
 
   progressionArr.push(startNum);
 
@@ -23,7 +23,9 @@ const runProgression = () => {
     }
   }
 
-  console.log('What number is missing in the progression?'); // НЕ ЗАБЫТЬ ЗАСУНУТЬ ПОД ВЫЧИСЛЕНИЯ
+  console.log('What number is missing in the progression?');
+
+  question = question.slice(1);
   const answer = getUserAnswer(question, correctAnswer);
 
   return answer;

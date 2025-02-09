@@ -50,7 +50,7 @@ brain-games
 brain-even
 ```
 
-[![asciicast](https://asciinema.org/a/701492.svg)](brain-even-demo)
+[![asciicast](https://asciinema.org/a/701492.svg)](https://asciinema.org/a/701492)
 
 #### Calculating the result of an expression
 
@@ -60,7 +60,7 @@ brain-even
 brain-calc
 ```
 
-[![asciicast](https://asciinema.org/a/701548.svg)](brain-calc-demo)
+[![asciicast](https://asciinema.org/a/701548.svg)](https://asciinema.org/a/701548)
 
 #### Greatest common divisor
 
@@ -70,7 +70,7 @@ brain-calc
 brain-gcd
 ```
 
-[![asciicast](https://asciinema.org/a/701632.svg)](brain-gcd-demo)
+[![asciicast](https://asciinema.org/a/701632.svg)](https://asciinema.org/a/701632)
 
 #### Is the number prime?
 
@@ -80,7 +80,7 @@ brain-gcd
 brain-prime
 ```
 
-[![asciicast](https://asciinema.org/a/701663.svg)](brain-prime-demo)
+[![asciicast](https://asciinema.org/a/701663.svg)](https://asciinema.org/a/701663)
 
 #### Arithmetic progression sequence
 
@@ -90,4 +90,4 @@ brain-prime
 brain-progression
 ```
 
-[![asciicast](https://asciinema.org/a/701647.svg)](brain-progression-demo)
+[![asciicast](https://asciinema.org/a/701647.svg)](https://asciinema.org/a/701647)

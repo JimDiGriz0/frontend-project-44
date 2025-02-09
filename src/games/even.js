@@ -1,6 +1,5 @@
-import { getUserAnswer, getRandomNumber } from '../utils.js';
+import { getUserAnswer, getRandomNumber, isEven } from '../utils.js';
 
-const isEven = (num) => num % 2 === 0;
 const runEven = () => {
   const currentCheckNum = getRandomNumber(1, 1000);
   const correctAnswer = isEven(currentCheckNum) ? 'yes' : 'no';

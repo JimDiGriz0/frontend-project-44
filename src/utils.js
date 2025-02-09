@@ -1,3 +1,4 @@
+/* eslint-disable object-curly-newline */
 import readlineSync from 'readline-sync';
 
 const getRandomNumber = (min = 0, max = 100) => Math.floor(Math.random() * (max - min + 1)) + min;
@@ -18,4 +19,6 @@ const getRandomOperator = () => {
   return operators[Math.floor(Math.random() * operators.length)];
 };
 
-export { getRandomNumber, getUserAnswer, getRandomOperator };
+const isEven = (num) => num % 2 === 0;
+
+export { getRandomNumber, getUserAnswer, getRandomOperator, isEven };

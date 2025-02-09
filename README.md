@@ -28,7 +28,7 @@ make install
 npm link
 ```
 
-[![asciicast](https://asciinema.org/a/701492.svg)](brain-games-install)
+[![asciicast](https://asciinema.org/a/701492.svg)](https://asciinema.org/a/701492)
 
 ## Includes the following games:
 
@@ -40,7 +40,7 @@ npm link
 brain-games
 ```
 
-[![asciicast](https://asciinema.org/a/702329.svg)](brain-games-greetings-demo)
+[![asciicast](https://asciinema.org/a/702329.svg)](https://asciinema.org/a/702329)
 
 #### Checking if a number is even
 

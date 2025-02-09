@@ -14,6 +14,8 @@ Node.js >= v13.2.0
 
 ### Install:
 
+#### Just type the command:
+
 ```
 git clone git@github.com:JimDiGriz0/frontend-project-44.git
 ```
@@ -26,60 +28,66 @@ make install
 npm link
 ```
 
-[![asciicast](https://asciinema.org/a/701492.svg)](brain-games install)
+[![asciicast](https://asciinema.org/a/701492.svg)](brain-games-install)
 
 ## Includes the following games:
 
 #### Greetings!
 
-to start type:
+#### Just type the command to start:
 
 ```
 brain-games
 ```
 
+[![asciicast](https://asciinema.org/a/702329.svg)](brain-games-greetings-demo)
+
 #### Checking if a number is even
 
-to start type:
+#### Just type the command to start:
 
 ```
 brain-even
 ```
 
+[![asciicast](https://asciinema.org/a/701492.svg)](brain-even-demo)
+
 #### Calculating the result of an expression
 
-to start type:
+#### Just type the command to start:
 
 ```
 brain-calc
 ```
 
-[![asciicast](https://asciinema.org/a/701632.svg)](brain-gcd)
+[![asciicast](https://asciinema.org/a/701548.svg)](brain-calc-demo)
 
 #### Greatest common divisor
 
-to start type:
+#### Just type the command to start:
 
 ```
 brain-gcd
 ```
 
-[![asciicast](https://asciinema.org/a/701647.svg)](brain-progression)
+[![asciicast](https://asciinema.org/a/701632.svg)](brain-gcd-demo)
 
 #### Is the number prime?
 
-to start type:
+#### Just type the command to start:
 
 ```
 brain-prime
 ```
 
-[![asciicast](https://asciinema.org/a/701663.svg)](brain-prime)
+[![asciicast](https://asciinema.org/a/701663.svg)](brain-prime-demo)
 
 #### Arithmetic progression sequence
 
-to start type:
+#### Just type the command to start:
 
 ```
 brain-progression
 ```
+
+[![asciicast](https://asciinema.org/a/701647.svg)](brain-progression-demo)

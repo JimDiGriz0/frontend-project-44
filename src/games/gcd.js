@@ -7,10 +7,10 @@ const getGcdRoundData = () => {
   const firstNum = getRandomNumber(1, 100);
   const secondNum = getRandomNumber(1, 100);
 
-  const gcd = getGcd(firstNum, secondNum);
+  const correctAnswer = getGcd(firstNum, secondNum);
   const question = `${firstNum} ${secondNum}`;
 
-  return [question, String(gcd)];
+  return [question, String(correctAnswer)];
 };
 
 const runGcdGame = () => runGame(getGcdRoundData, description);

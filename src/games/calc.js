@@ -1,6 +1,9 @@
-import { getRandomNumber, getRandomOperator, getUserAnswer } from '../utils.js';
+import { getRandomNumber, getRandomOperator } from '../utils.js';
+import runGame from '../index.js';
 
-const runCalc = () => {
+const description = 'What is the result of the expression?';
+
+const calcRound = () => {
   const a = getRandomNumber(1, 20);
   const b = getRandomNumber(1, 20);
   let currentExpression;
@@ -24,10 +27,9 @@ const runCalc = () => {
       break;
   }
 
-  console.log('What is the result of the expression?');
-
-  const answer = getUserAnswer(currentExpression, String(correctAnswer));
-  return answer;
+  return [currentExpression, String(correctAnswer)];
 };
 
-export default runCalc;
+const runCalcGame = () => runGame(calcRound, description);
+
+export default runCalcGame;

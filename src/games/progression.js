@@ -1,6 +1,9 @@
-import { getRandomNumber, getUserAnswer } from '../utils.js';
+import { getRandomNumber } from '../utils.js';
+import runGame from '../index.js';
 
-const runProgression = () => {
+const description = 'What number is missing in the progression?';
+
+const runProgressionRound = () => {
   const progressionArr = [];
   const currentDiff = getRandomNumber(1, 20);
   const startNum = getRandomNumber(1, 10);
@@ -22,13 +25,11 @@ const runProgression = () => {
       question = `${question} ${progressionArr[z]}`;
     }
   }
-
-  console.log('What number is missing in the progression?');
-
   question = question.slice(1);
-  const answer = getUserAnswer(question, correctAnswer);
 
-  return answer;
+  return [question, correctAnswer];
 };
 
-export default runProgression;
+const runProgressionGame = () => runGame(runProgressionRound, description);
+
+export default runProgressionGame;

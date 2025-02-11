@@ -1,13 +1,15 @@
-import { getUserAnswer, getRandomNumber, isEven } from '../utils.js';
+import { getRandomNumber, isEven } from '../utils.js';
+import runGame from '../index.js';
+
+const description = "Answer 'yes' if the number is even, otherwise answer 'no'.";
 
 const runEven = () => {
-  const currentCheckNum = getRandomNumber(1, 1000);
-  const correctAnswer = isEven(currentCheckNum) ? 'yes' : 'no';
+  const question = getRandomNumber(1, 1000);
+  const correctAnswer = isEven(question) ? 'yes' : 'no';
 
-  console.log('Answer "yes" if the number is even, otherwise answer "no".');
-
-  const answer = getUserAnswer(currentCheckNum, correctAnswer);
-  return answer;
+  return [question, correctAnswer];
 };
 
-export default runEven;
+const runEvenGame = () => runGame(runEven, description);
+
+export default runEvenGame;

@@ -1,5 +1,4 @@
 /* eslint-disable object-curly-newline */
-import readlineSync from 'readline-sync';
 
 const isEven = (num) => num % 2 === 0;
 
@@ -10,15 +9,33 @@ const getRandomOperator = () => {
   return operators[Math.floor(Math.random() * operators.length)];
 };
 
-const getUserAnswer = (question, correctAnswer) => {
-  const userAnswer = readlineSync.question(`Question: ${question} \nYour answer: `);
-
-  if (correctAnswer === userAnswer) {
-    console.log('Correct!');
-    return [true, correctAnswer, userAnswer];
+const getGcd = (firstNum, secondNum) => {
+  let a = firstNum;
+  let b = secondNum;
+  while (b !== 0) {
+    const temp = b;
+    b = a % b;
+    a = temp;
   }
-
-  return [false, correctAnswer, userAnswer];
+  return a;
 };
 
-export { getRandomNumber, getUserAnswer, getRandomOperator, isEven };
+const isPrime = (num) => {
+  if (num < 2) {
+    return false;
+  }
+
+  if (num % 2 === 0) {
+    return num === 2;
+  }
+
+  for (let i = 3; i <= Math.sqrt(num); i += 2) {
+    if (num % i === 0) {
+      return false;
+    }
+  }
+
+  return true;
+};
+
+export { getRandomNumber, getGcd, getRandomOperator, isEven, isPrime };

@@ -3,7 +3,7 @@ import runGame from '../index.js';
 
 const description = 'Find the greatest common divisor of given numbers.';
 
-const gcdRound = () => {
+const getGcdRoundData = () => {
   const firstNum = getRandomNumber(1, 100);
   const secondNum = getRandomNumber(1, 100);
 
@@ -13,6 +13,6 @@ const gcdRound = () => {
   return [question, String(gcd)];
 };
 
-const runGcdGame = () => runGame(gcdRound, description);
+const runGcdGame = () => runGame(getGcdRoundData, description);
 
 export default runGcdGame;

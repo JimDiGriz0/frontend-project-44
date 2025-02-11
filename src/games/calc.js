@@ -3,7 +3,7 @@ import runGame from '../index.js';
 
 const description = 'What is the result of the expression?';
 
-const calcRound = () => {
+const getCalcRoundData = () => {
   const a = getRandomNumber(1, 20);
   const b = getRandomNumber(1, 20);
   let currentExpression;
@@ -30,6 +30,6 @@ const calcRound = () => {
   return [currentExpression, String(correctAnswer)];
 };
 
-const runCalcGame = () => runGame(calcRound, description);
+const runCalcGame = () => runGame(getCalcRoundData, description);
 
 export default runCalcGame;

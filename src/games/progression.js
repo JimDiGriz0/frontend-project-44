@@ -3,7 +3,7 @@ import runGame from '../index.js';
 
 const description = 'What number is missing in the progression?';
 
-const runProgressionRound = () => {
+const getProgressionRoundData = () => {
   const progressionArr = [];
   const currentDiff = getRandomNumber(1, 20);
   const startNum = getRandomNumber(1, 10);
@@ -30,6 +30,6 @@ const runProgressionRound = () => {
   return [question, correctAnswer];
 };
 
-const runProgressionGame = () => runGame(runProgressionRound, description);
+const runProgressionGame = () => runGame(getProgressionRoundData, description);
 
 export default runProgressionGame;
